@@ -7,7 +7,7 @@ import plotly.express as px
 st.set_page_config(page_title="Tabbed Bar Chart Dashboard", layout="wide")
 st.title("Carlos Mackenzie - Principales Insights")
 
-df = pd.read_csv("c:/Users/macke/Downloads/PruebaDS.xlsx - Sheet1.csv",dtype=str)
+df = pd.read_csv("PruebaDS.xlsx - Sheet1.csv",dtype=str)
 
 df[['anho', 'mes_anho']] = df['mes'].str.split('-', expand=True)
 
